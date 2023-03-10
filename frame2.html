@@ -1,0 +1,98 @@
+<html> <!--SCRIPT JERE NI DEK-->
+<head> <!--SCRIPT JERE NI DEK-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc; 
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    </style>
+
+<title>Page Title</title>
+</head>
+<body bgcolor="yellow">
+
+  <img src="logotalenta.png" alt="" width="200" height="150">
+
+  <h1>Real Time</h1>
+<!--SCRIPT JERE NI DEK-->
+  <button type="button"
+  onclick="document.getElementById('demo').innerHTML = Date()">
+  Pencet Saya Untuk Mengetahui Jam Sekarang.</button>
+  
+  <p id="demo"></p>
+
+<center><P><h1>Pilihan</center></p></h1>
+<A HREF="video.html" target="KANAN"><img src="video.png" alt="" width="40" height="30"></img></A> <!--SCRIPT JERE NI DEK-->
+<A HREF="Biodata.html" target="KANAN"><img src="biodata.png" alt="" width="40" height="30"></img></A> <!--SCRIPT JERE NI DEK-->
+<a HREF="MAILTO:Smp20217091@Talenta.sch.id"><img src="Email.png" alt="" width="40" height="30"></img></a> <!--SCRIPT JERE NI DEK-->
+    <br>
+    <h2>Pendapat Saya Tentang Up 5</h2>
+
+<button class="accordion">Pendapat</button>
+<div class="panel">
+  <p>Menurut Saya Proyek Up 5 Ini Cukup Sulit Mengapa? Penjelasannya Ada Di Bawah</p>
+</div>
+
+<button class="accordion">Informatika</button>
+<div class="panel">
+  <p>Bagi Saya Bagian Informatika Membuat Html Cukuplah Mudah Karena Sudah Banyak Website Atau Youtube Yang Menjelaskan Bagaimana Cara Kerjanya Html.</p>
+</div>
+
+<button class="accordion">Mandarin</button>
+<div class="panel">
+  <p>Bagi Saya Mandarin Cukup Susah, Disini Bagian Saya Yang Tidak Begitu Suka, Mengapa? Karena Saya Harus Menghafalkan Kata Kata Untuk Perkenalan Saya.</p>
+</div>
+
+</br>
+
+    <br>
+    <p>Click Button Untuk Mengetahui Website Sedang Berjalan.</p>
+    <p><button onclick="myFunction()">Try it</button></p>
+    <p id="demo"></p>
+    </br>
+    
+    <script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    function myFunction() {
+      var x = "Apakah Website Sedang Berjalan? " + navigator.onLine;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+</body>
+</html>
+<!--SCRIPT JERE NI DEK--><!--SCRIPT JERE NI DEK--><!--SCRIPT JERE NI DEK--><!--SCRIPT JERE NI DEK--><!--SCRIPT JERE NI DEK-->
